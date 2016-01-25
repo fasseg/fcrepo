@@ -458,13 +458,18 @@ public class DefaultManagement
 
         // check for valid xml name for datastream ID
         if (dsID != null) {
-            if (!XMLUtils.isWellFormedXMLName(dsID)) {
-                throw new InvalidXMLNameException("Invalid syntax for datastream ID. "
-                                                  + "The datastream ID of \""
-                                                  + dsID
-                                                  + "\" is"
-                                                  + "not a valid XML Name");
+            for (char c : dsID.toCharArray()) {
+                if (!Character.isLetterOrDigit(c)) {
+                    throw new GeneralException("Invalid statstream ID. ID may only contain numbers and letters");
+                }
             }
+//            if (!XMLUtils.isWellFormedXMLName(dsID)) {
+//                throw new InvalidXMLNameException("Invalid syntax for datastream ID. "
+//                                                  + "The datastream ID of \""
+//                                                  + dsID
+//                                                  + "\" is"
+//                                                  + "not a valid XML Name");
+//            }
         }
 
         if (dsID != null
