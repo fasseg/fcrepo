@@ -421,15 +421,15 @@ public class DefaultManagement
         }
 
         // check for valid xml name for datastream ID
-        if (dsID != null) {
-            if (!XMLUtils.isWellFormedXMLName(dsID)) {
-                throw new InvalidXMLNameException("Invalid syntax for datastream ID. "
-                                                  + "The datastream ID of \""
-                                                  + dsID
-                                                  + "\" is"
-                                                  + "not a valid XML Name");
-            }
-        }
+//        if (dsID != null) {
+//            if (!XMLUtils.isWellFormedXMLName(dsID)) {
+//                throw new InvalidXMLNameException("Invalid syntax for datastream ID. "
+//                                                  + "The datastream ID of \""
+//                                                  + dsID
+//                                                  + "\" is"
+//                                                  + "not a valid XML Name");
+//            }
+//        }
 
         if (dsID != null
             && (dsID.equals("AUDIT") || dsID.equals("FEDORA-AUDITTRAIL"))) {
@@ -616,13 +616,13 @@ public class DefaultManagement
             throws ServerException {
 
         // check for valid xml name for datastream ID
-        if (datastreamId != null) {
-            if (!XMLUtils.isWellFormedXMLName(datastreamId)) {
-                throw new InvalidXMLNameException("Invalid syntax for "
-                                                  + "datastream ID. The datastream ID of \""
-                                                  + datastreamId + "\" is not a valid XML Name");
-            }
-        }
+//        if (datastreamId != null) {
+//            if (!XMLUtils.isWellFormedXMLName(datastreamId)) {
+//                throw new InvalidXMLNameException("Invalid syntax for "
+//                                                  + "datastream ID. The datastream ID of \""
+//                                                  + datastreamId + "\" is not a valid XML Name");
+//            }
+//        }
 
         if (datastreamId.equals("AUDIT")
             || datastreamId.equals("FEDORA-AUDITTRAIL")) {
@@ -836,13 +836,13 @@ public class DefaultManagement
                                         Date lastModifiedDate) throws ServerException {
 
         // check for valid xml name for datastream ID
-        if (datastreamId != null) {
-            if (!XMLUtils.isWellFormedXMLName(datastreamId)) {
-                throw new InvalidXMLNameException("Invalid syntax for "
-                                                  + "datastream ID. The datastream ID of \""
-                                                  + datastreamId + "\" is not a valid XML Name");
-            }
-        }
+//        if (datastreamId != null) {
+//            if (!XMLUtils.isWellFormedXMLName(datastreamId)) {
+//                throw new InvalidXMLNameException("Invalid syntax for "
+//                                                  + "datastream ID. The datastream ID of \""
+//                                                  + datastreamId + "\" is not a valid XML Name");
+//            }
+//        }
 
         if (datastreamId.equals("AUDIT")
             || datastreamId.equals("FEDORA-AUDITTRAIL")) {
