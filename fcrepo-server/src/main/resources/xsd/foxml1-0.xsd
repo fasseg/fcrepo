@@ -187,7 +187,7 @@
 	<!-- See http://www.fedora.info/definitions/identifiers/ -->
 	<xsd:simpleType name="pidType">
 		<xsd:restriction base="xsd:string">
-			<xsd:maxLength value="64"/>
+			<xsd:maxLength value="256"/>
 			<xsd:pattern value="([A-Za-z0-9]|-|\.)+:(([A-Za-z0-9])|-|\.|~|_|(%[0-9A-F]{2}))+"/>
 		</xsd:restriction>
 	</xsd:simpleType>
@@ -198,7 +198,7 @@
 	</xsd:simpleType>
 	<xsd:simpleType name="idType">
 		<xsd:restriction base="xsd:ID">
-			<xsd:maxLength value="64"/>
+			<xsd:maxLength value="256"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="uriListType">

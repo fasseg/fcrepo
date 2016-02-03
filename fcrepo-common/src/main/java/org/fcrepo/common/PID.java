@@ -44,7 +44,7 @@ import org.fcrepo.common.rdf.SimpleURIReference;
 public class PID {
 
     /** The maximum length of a PID is 64. */
-    public static final int MAX_LENGTH = 64;
+    public static final int MAX_LENGTH = 256;
 
     /** The reserved handle namespace id * */
     public static final String NS_HANDLE = "hdl";
