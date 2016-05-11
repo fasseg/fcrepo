@@ -409,10 +409,7 @@ public class RelsValidator
         boolean bValid = true;
 
         for (scan = 0; scan < stValue.length(); scan++) {
-            if (scan == 0)
-                bValid = XMLChar.isNCNameStart(stValue.charAt(scan));
-            else
-                bValid = XMLChar.isNCName(stValue.charAt(scan));
+            bValid = XMLChar.isNCName(stValue.charAt(scan));
             if (!bValid)
                 break;
         }
