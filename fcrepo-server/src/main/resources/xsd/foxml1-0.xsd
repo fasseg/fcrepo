@@ -197,7 +197,7 @@
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="idType">
-		<xsd:restriction base="xsd:ID">
+		<xsd:restriction base="xsd:string">
 			<xsd:maxLength value="256"/>
 		</xsd:restriction>
 	</xsd:simpleType>
